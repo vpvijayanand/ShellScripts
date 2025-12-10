@@ -1,6 +1,11 @@
 #!/bin/bash
-# loops
-for name in Alice Bob Charlie David
+
+while read -p "Enter a number (0 to quit): " num
 do
-    echo "Hello, $name"
+    if [ $num -eq 0 ]
+    then
+        echo "Goodbye!"
+        break
+    fi
+    echo "You entered: $num"
 done
