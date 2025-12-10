@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Variable declaration (no spaces around =)
-name="John"
-age=25
+name="Vijay"
+age=47
 city="Chennai"
 
 # Using variables (use $ to access value)
