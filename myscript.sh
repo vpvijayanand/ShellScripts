@@ -1,16 +1,23 @@
 #!/bin/bash
 
-for i in {1..10}
+target=$((RANDOM % 100 + 1))
+attempts=0
+
+echo "Guess a number between 1 and 100"
+
+while true
 do
-    if [ $i -eq 5 ]
-    then
-        continue  # Skip 5
-    fi
+    read -p "Your guess: " guess
+    attempts=$((attempts + 1))
     
-    if [ $i -eq 8 ]
+    if [ $guess -eq $target ]
     then
-        break  # Stop at 8
+        echo "Correct! You won in $attempts attempts"
+        break
+    elif [ $guess -lt $target ]
+    then
+        echo "Too low!"
+    else
+        echo "Too high!"
     fi
-    
-    echo "Number: $i"
 done
