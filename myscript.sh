@@ -14,3 +14,12 @@ then
 else
     echo "Grade: F"
 fi
+
+#For Numbers:
+
+#-eq : equal to
+#-ne : not equal to
+#-gt : greater than
+#-ge : greater than or equal to
+#-lt : less than
+#-le : less than or equal to
