@@ -1,5 +1,6 @@
 #!/bin/bash
-#Using Prompts with -p
+#Silent Input (for passwords) with -s
 
-read -p "Enter your age: " age
-echo "You are $age years old"
+read -sp "Enter password: " password
+echo ""  # New line after silent input
+echo "Password saved (hidden)"
