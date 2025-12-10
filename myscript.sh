@@ -23,3 +23,10 @@ fi
 #-ge : greater than or equal to
 #-lt : less than
 #-le : less than or equal to
+
+#For Strings:
+
+#= : equal to
+#!= : not equal to
+#-z : string is empty
+#-n : string is not empty
