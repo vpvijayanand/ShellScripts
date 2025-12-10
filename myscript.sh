@@ -1,9 +1,8 @@
 #!/bin/bash
-#Special Variables
 
+# Store command output in variable
+current_date=$(date)
+echo "Today is: $current_date"
 
-echo "Script name: $0"
-echo "First argument: $1"
-echo "Second argument: $2"
-echo "All arguments: $@"
-echo "Number of arguments: $#"
+user_count=$(who | wc -l)
+echo "Number of users logged in: $user_count"
