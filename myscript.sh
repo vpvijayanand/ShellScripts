@@ -1,6 +1,8 @@
 #!/bin/bash
-#Silent Input (for passwords) with -s
+# if conditional example
+age=18
 
-read -sp "Enter password: " password
-echo ""  # New line after silent input
-echo "Password saved (hidden)"
+if [ $age -ge 18 ]
+then
+    echo "You are an adult"
+fi
