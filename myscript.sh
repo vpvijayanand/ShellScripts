@@ -1,5 +1,5 @@
 #!/bin/bash
+#Using Prompts with -p
 
-echo "What is your name?"
-read name
-echo "Hello, $name!"
+read -p "Enter your age: " age
+echo "You are $age years old"
