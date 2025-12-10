@@ -5,7 +5,6 @@ do
     echo "Hello, $name"
 done
 
-#!/bin/bash
 
 for i in {1..5}
 do
