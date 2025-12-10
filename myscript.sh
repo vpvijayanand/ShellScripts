@@ -1,16 +1,18 @@
 #!/bin/bash
 
-read -p "Enter your marks: " marks
+file="test.txt"
 
-if [ $marks -ge 90 ]
+if [ -f "$file" ]
 then
-    echo "Grade: A"
-elif [ $marks -ge 75 ]
-then
-    echo "Grade: B"
-elif [ $marks -ge 60 ]
-then
-    echo "Grade: C"
+    echo "File exists"
 else
-    echo "Grade: F"
+    echo "File does not exist"
 fi
+
+#Common file tests:
+
+#-f : file exists and is regular file
+#-d : directory exists
+#-r : file is readable
+#-w : file is writable
+#-x : file is executable
