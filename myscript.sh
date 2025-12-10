@@ -1,11 +1,16 @@
 #!/bin/bash
 
-while read -p "Enter a number (0 to quit): " num
+for i in {1..10}
 do
-    if [ $num -eq 0 ]
+    if [ $i -eq 5 ]
     then
-        echo "Goodbye!"
-        break
+        continue  # Skip 5
     fi
-    echo "You entered: $num"
+    
+    if [ $i -eq 8 ]
+    then
+        break  # Stop at 8
+    fi
+    
+    echo "Number: $i"
 done
