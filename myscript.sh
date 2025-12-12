@@ -1,11 +1,12 @@
 #!/bin/bash
-
-while read -p "Enter a number (0 to quit): " num
+num = 1
+while num
 do
-    if [ $num -eq 0 ]
+    if [ $num -eq 5 ]
     then
         echo "Goodbye!"
         break
     fi
+    $num=$num+1
     echo "You entered: $num"
 done
