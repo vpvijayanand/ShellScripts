@@ -4,7 +4,8 @@ num=1   # No spaces around '='
 
 while true
 do
-    if [ "$num" -eq 5 ]; then
+    if [ "$num" -eq 5 ]
+    then
         echo "Goodbye!"
         break
     fi
