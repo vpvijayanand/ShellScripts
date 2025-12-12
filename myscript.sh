@@ -9,7 +9,7 @@ do
         echo "Goodbye!"
         break
     fi
-
-    echo "You entered: $num"
     ((num++))   # increment variable
+    echo "You entered: $num"
+   
 done
