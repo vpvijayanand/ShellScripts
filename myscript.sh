@@ -9,7 +9,7 @@ done
 
 for i in {1..10}
 do
-result=$((i / 2))
+result=$((i % 2))
 
 if [ $result -eq 1 ]
 then
