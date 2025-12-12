@@ -7,6 +7,7 @@ do
         echo "Goodbye!"
         break
     fi
-    $num=$num+1
+
+    ((num++))
     echo "You entered: $num"
 done
