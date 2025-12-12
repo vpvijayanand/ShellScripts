@@ -1,6 +1,6 @@
 #!/bin/bash
 num = 1
-while num
+while $num
 do
     if [ $num -eq 5 ]
     then
