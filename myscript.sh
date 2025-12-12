@@ -2,12 +2,12 @@
 num = 1
 while $num
 do
-    if [ num -eq 5 ]
+    if [ $num -eq 5 ]
     then
         echo "Goodbye!"
         break
     fi
 
-    ((num++))
+    (($num++))
     echo "You entered: $num"
 done
