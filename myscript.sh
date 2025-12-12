@@ -6,7 +6,12 @@ do
 done
 
 
+
 for i in {1..10}
 do
-    echo "Number: $i"
+
+if [ $i -ge 5 ]
+then
+       echo "Number: $i"
+fi
 done
